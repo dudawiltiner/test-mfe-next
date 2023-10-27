@@ -1,0 +1,31 @@
+export const enUS = {
+  home: {
+    title: 'To-Do List',
+    addDescription: 'Add a new task',
+    addButton: 'Add',
+    updateButton: 'Save',
+    addNameInput: 'Task Name',
+    addTaskDescription: 'Task Description',
+    tasksTitle: 'Tasks',
+    noDataMessage: 'No tasks created yet.',
+  },
+  login: {
+    title: 'Login',
+    emailLabel: 'Email',
+    passwordLabel: 'Password',
+    loginButton: 'Enter',
+    registerLink: 'Register Account',
+    successMessage: 'Login successfully!',
+    errorMessage: 'Check that the email and password are correct.',
+  },
+  register: {
+    title: 'Register',
+    nameLabel: 'Name',
+    emailLabel: 'Email',
+    passwordLabel: 'Password',
+    confirmPasswordLabel: 'Confirm Password',
+    registerButton: 'Register',
+    successMessage: 'Registration completed successfully!',
+    errorMessage: 'We had a problem with your registration. Try again later.',
+  },
+};

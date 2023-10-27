@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-18T20:55:11.313Z",
+    "end": "2023-10-18T20:55:11.410Z",
+    "duration": 97,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a22b8029-004f-4c83-b7ef-7b9b90232c7d",
+      "title": "",
+      "fullFile": "src/components/organisms/Register/FormContainer/test/FormContainer.cy.tsx",
+      "file": "src/components/organisms/Register/FormContainer/test/FormContainer.cy.tsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1aafeeb1-cd28-45cb-8e91-250a953c9bd3",
+          "title": "<FormContainer />",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "when the form is mount, should show a title Login and the form",
+              "fullTitle": "<FormContainer /> when the form is mount, should show a title Login and the form",
+              "timedOut": null,
+              "duration": 74,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_context_ReactQueryProvider__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(___WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n        dictionary: src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_2__.ptBR\n    }, void 0, false, {\n        fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/organisms/Register/FormContainer/test/FormContainer.cy.tsx\",\n        lineNumber: 9,\n        columnNumber: 9\n    }, undefined)\n}, void 0, false, {\n    fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/organisms/Register/FormContainer/test/FormContainer.cy.tsx\",\n    lineNumber: 8,\n    columnNumber: 7\n}, undefined));\ncy.getByDataCy(\"title-register\").contains(\"Cadastro\");\ncy.getByDataCy(\"form-register\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "591cc2ea-57ab-402c-a409-5d7c853ee248",
+              "parentUUID": "1aafeeb1-cd28-45cb-8e91-250a953c9bd3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "591cc2ea-57ab-402c-a409-5d7c853ee248"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 74,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

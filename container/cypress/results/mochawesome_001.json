@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-18T20:55:03.245Z",
+    "end": "2023-10-18T20:55:03.620Z",
+    "duration": 375,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6e36858e-3b9a-4a6d-a5ef-2705b81eeef9",
+      "title": "",
+      "fullFile": "src/components/templates/Sign/test/SignTemplate.cy.tsx",
+      "file": "src/components/templates/Sign/test/SignTemplate.cy.tsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c135fd8e-957d-48e0-9344-55ba66b2d1e0",
+          "title": "<SignTemplate />",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "when the login form was attached to the template, should show the form",
+              "fullTitle": "<SignTemplate /> when the login form was attached to the template, should show the form",
+              "timedOut": null,
+              "duration": 262,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile(\"public/assets/fundoUhuu.png\", null).then((img)=>{\n    // Intercept requests to Next backend image endpoint and return expected image\n    cy.intercept(\"_next/image*\", {\n        statusCode: 200,\n        headers: {\n            \"Content-Type\": \"image/png\"\n        },\n        body: img.buffer\n    });\n    cy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_index__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {\n        hasi18n: false,\n        lang: \"pt-BR\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_context_ReactQueryProvider__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_organisms_Login_FormContainer__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n                dictionary: src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_4__.ptBR\n            }, void 0, false, {\n                fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/templates/Sign/test/SignTemplate.cy.tsx\",\n                lineNumber: 21,\n                columnNumber: 13\n            }, undefined)\n        }, void 0, false, {\n            fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/templates/Sign/test/SignTemplate.cy.tsx\",\n            lineNumber: 20,\n            columnNumber: 11\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/templates/Sign/test/SignTemplate.cy.tsx\",\n        lineNumber: 19,\n        columnNumber: 9\n    }, undefined));\n});\ncy.getByDataCy(\"container-form-login\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "0b1264b4-d543-45c9-b7d6-291f0e91d0fc",
+              "parentUUID": "c135fd8e-957d-48e0-9344-55ba66b2d1e0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "when the register form was attached to the template, should show the form",
+              "fullTitle": "<SignTemplate /> when the register form was attached to the template, should show the form",
+              "timedOut": null,
+              "duration": 75,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_index__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {\n    hasi18n: false,\n    lang: \"pt-BR\",\n    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_context_ReactQueryProvider__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_organisms_Register_FormContainer__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n            dictionary: src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_4__.ptBR\n        }, void 0, false, {\n            fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/templates/Sign/test/SignTemplate.cy.tsx\",\n            lineNumber: 34,\n            columnNumber: 11\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/templates/Sign/test/SignTemplate.cy.tsx\",\n        lineNumber: 33,\n        columnNumber: 9\n    }, undefined)\n}, void 0, false, {\n    fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/templates/Sign/test/SignTemplate.cy.tsx\",\n    lineNumber: 32,\n    columnNumber: 7\n}, undefined));\ncy.getByDataCy(\"container-form-register\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "f22b79f4-dc0b-49e4-a123-e584712550d9",
+              "parentUUID": "c135fd8e-957d-48e0-9344-55ba66b2d1e0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0b1264b4-d543-45c9-b7d6-291f0e91d0fc",
+            "f22b79f4-dc0b-49e4-a123-e584712550d9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 337,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "errorPassword": {
+    "name": "user name example",
+    "email": "user@uhuu.com",
+    "password": "password",
+    "confirmPassword": "wrongpassword"
+  },
+  "succesRegister": {
+    "name": "user name example",
+    "email": "user-name@uhuu.com",
+    "password": "password",
+    "confirmPassword": "password"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-18T20:55:01.045Z",
+    "end": "2023-10-18T20:55:01.430Z",
+    "duration": 385,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0c2a5046-7791-4bc1-9346-ea9ffbf242dc",
+      "title": "",
+      "fullFile": "src/components/templates/Home/test/HomeTemplate.cy.tsx",
+      "file": "src/components/templates/Home/test/HomeTemplate.cy.tsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a760abc8-36f8-49ec-b3d8-7f9ce0e5ac62",
+          "title": "<HomeTemplate />",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "when this component is assembled, the title, the form for adding a new task and the list of tasks should appear",
+              "fullTitle": "<HomeTemplate /> when this component is assembled, the title, the form for adding a new task and the list of tasks should appear",
+              "timedOut": null,
+              "duration": 272,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile(\"public/assets/fundoUhuu.png\", null).then((img)=>{\n    // Intercept requests to Next backend image endpoint and return expected image\n    cy.intercept(\"_next/image*\", {\n        statusCode: 200,\n        headers: {\n            \"Content-Type\": \"image/png\"\n        },\n        body: img.buffer\n    });\n    cy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(___WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n        hasi18n: false,\n        lang: \"pt-BR\",\n        dictionary: src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR\n    }, void 0, false, {\n        fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/templates/Home/test/HomeTemplate.cy.tsx\",\n        lineNumber: 15,\n        columnNumber: 16\n    }, undefined));\n});\ncy.getByDataCy(\"to-do-list-title\").should(\"be.visible\").contains(\"Lista de Tarefas\");\ncy.getByDataCy(\"form-add-task-container\").should(\"be.visible\");\ncy.getByDataCy(\"task-list-container\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "0cd19101-3f7e-42ec-adcb-e314ebedb352",
+              "parentUUID": "a760abc8-36f8-49ec-b3d8-7f9ce0e5ac62",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0cd19101-3f7e-42ec-adcb-e314ebedb352"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 272,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

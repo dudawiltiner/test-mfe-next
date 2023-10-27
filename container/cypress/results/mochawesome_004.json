@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-18T20:55:09.300Z",
+    "end": "2023-10-18T20:55:09.469Z",
+    "duration": 169,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f3d8fedc-7de7-4f82-8b34-4b664ca3480d",
+      "title": "",
+      "fullFile": "src/components/organisms/Home/FormAddTask/test/FormAddTask.cy.tsx",
+      "file": "src/components/organisms/Home/FormAddTask/test/FormAddTask.cy.tsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "452343f8-3e77-470d-9c50-65d2944804d3",
+          "title": "<FormAddTask />",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "when this component is assembled, the correct title and form for adding a task should appear",
+              "fullTitle": "<FormAddTask /> when this component is assembled, the correct title and form for adding a task should appear",
+              "timedOut": null,
+              "duration": 90,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_context_ReactQueryProvider__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {\n    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_ComponentUseCase__WEBPACK_IMPORTED_MODULE_2__.ComponentUseCase, {}, void 0, false, {\n        fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/organisms/Home/FormAddTask/test/FormAddTask.cy.tsx\",\n        lineNumber: 8,\n        columnNumber: 9\n    }, undefined)\n}, void 0, false, {\n    fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/organisms/Home/FormAddTask/test/FormAddTask.cy.tsx\",\n    lineNumber: 7,\n    columnNumber: 7\n}, undefined));\ncy.getByDataCy(\"add-form-title\").should(\"be.visible\").contains(\"Adicione uma nova tarefa\");\ncy.getByDataCy(\"form-task\");",
+              "err": {},
+              "uuid": "0be33bcc-c755-4da3-ab95-ca81b1107347",
+              "parentUUID": "452343f8-3e77-470d-9c50-65d2944804d3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0be33bcc-c755-4da3-ab95-ca81b1107347"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 90,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-18T20:55:15.424Z",
+    "end": "2023-10-18T20:55:15.624Z",
+    "duration": 200,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "36e2d288-fe0e-4420-ad10-ccb13616e55d",
+      "title": "",
+      "fullFile": "src/components/molecules/Register/Forms/test/Form.cy.tsx",
+      "file": "src/components/molecules/Register/Forms/test/Form.cy.tsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "729b6888-730f-4993-b654-c5a7273f421a",
+          "title": "<Form />",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "when the email and password are not filled in and the \"ENTER\" button is clicked, should show the correct help messages",
+              "fullTitle": "<Form /> when the email and password are not filled in and the \"ENTER\" button is clicked, should show the correct help messages",
+              "timedOut": null,
+              "duration": 151,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_ComponentUseCase__WEBPACK_IMPORTED_MODULE_1__.ComponentUseCase, {\n    submitError: false\n}, void 0, false, {\n    fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/molecules/Register/Forms/test/Form.cy.tsx\",\n    lineNumber: 5,\n    columnNumber: 14\n}, undefined));\ncy.getByDataCy(\"button-register\").click();\ncy.getByDataCy(\"help-text-name-register\").should(\"be.visible\").contains(\"Confira se o nome est\\xe1 preenchido.\");\ncy.getByDataCy(\"help-text-email-register\").should(\"be.visible\").contains(\"Confira se o email est\\xe1 preenchido.\");\ncy.getByDataCy(\"help-text-password-register\").should(\"be.visible\").contains(\"Confira se a senha est\\xe1 preenchida.\");\ncy.getByDataCy(\"help-text-confirm-password-register\").should(\"be.visible\").contains(\"Confira se as senhas s\\xe3o iguais.\");",
+              "err": {},
+              "uuid": "ffca39f1-2fa2-4e69-a571-e8fcc0a92527",
+              "parentUUID": "729b6888-730f-4993-b654-c5a7273f421a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "when the component receives submitError as true, it should show an error message",
+              "fullTitle": "<Form /> when the component receives submitError as true, it should show an error message",
+              "timedOut": null,
+              "duration": 21,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_ComponentUseCase__WEBPACK_IMPORTED_MODULE_1__.ComponentUseCase, {\n    submitError: true\n}, void 0, false, {\n    fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/molecules/Register/Forms/test/Form.cy.tsx\",\n    lineNumber: 27,\n    columnNumber: 14\n}, undefined));\ncy.getByDataCy(\"submit-error-message\").should(\"be.visible\").contains(\"Tivemos um problema com o seu cadastro. Tente novamente mais tarde.\");",
+              "err": {},
+              "uuid": "c682bd03-925f-41d3-9afc-5e6621704249",
+              "parentUUID": "729b6888-730f-4993-b654-c5a7273f421a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ffca39f1-2fa2-4e69-a571-e8fcc0a92527",
+            "c682bd03-925f-41d3-9afc-5e6621704249"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 172,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

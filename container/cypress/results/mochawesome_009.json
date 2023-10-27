@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-18T20:55:19.732Z",
+    "end": "2023-10-18T20:55:19.943Z",
+    "duration": 211,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "661a0ad1-f342-4823-a574-87ec181f08d2",
+      "title": "",
+      "fullFile": "src/components/molecules/Home/ToDoList/AddOrUpdateItem/test/AddOrUpdateItem.cy.tsx",
+      "file": "src/components/molecules/Home/ToDoList/AddOrUpdateItem/test/AddOrUpdateItem.cy.tsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c8bb23ad-7c09-4509-ac50-a9b4efbb8076",
+          "title": "<AddorUpdateItem />",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "when the component is mounted, should show the form, an input and button",
+              "fullTitle": "<AddorUpdateItem /> when the component is mounted, should show the form, an input and button",
+              "timedOut": null,
+              "duration": 74,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var _ptBR_home, _ptBR_home1, _ptBR_home2, _ptBR_home3;\ncy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(___WEBPACK_IMPORTED_MODULE_2__.AddOrUpdateItem, {\n    handleSave: ()=>{},\n    inputDescriptionLabel: src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === null || src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === void 0 ? void 0 : (_ptBR_home = src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR.home) === null || _ptBR_home === void 0 ? void 0 : _ptBR_home.addTaskDescription,\n    inputNameLabel: src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === null || src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === void 0 ? void 0 : (_ptBR_home1 = src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR.home) === null || _ptBR_home1 === void 0 ? void 0 : _ptBR_home1.addNameInput,\n    addButtonName: src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === null || src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === void 0 ? void 0 : (_ptBR_home2 = src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR.home) === null || _ptBR_home2 === void 0 ? void 0 : _ptBR_home2.addButton,\n    saveButtonName: src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === null || src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === void 0 ? void 0 : (_ptBR_home3 = src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR.home) === null || _ptBR_home3 === void 0 ? void 0 : _ptBR_home3.updateButton\n}, void 0, false, {\n    fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/molecules/Home/ToDoList/AddOrUpdateItem/test/AddOrUpdateItem.cy.tsx\",\n    lineNumber: 7,\n    columnNumber: 7\n}, undefined));\ncy.getByDataCy(\"form-task\").should(\"be.visible\");\ncy.getByDataCy(\"input-name-task\").should(\"be.visible\");\ncy.getByDataCy(\"input-description-task\").should(\"be.visible\");\ncy.getByDataCy(\"button-add-task\").should(\"be.visible\");\ncy.getByDataCy(\"button-add-task\").contains(\"Adicionar\");",
+              "err": {},
+              "uuid": "62a6335c-20dd-4f44-8b69-a364d965e2e1",
+              "parentUUID": "c8bb23ad-7c09-4509-ac50-a9b4efbb8076",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "when the component has the property isToSave equal to true, the button must contain the word Salvar",
+              "fullTitle": "<AddorUpdateItem /> when the component has the property isToSave equal to true, the button must contain the word Salvar",
+              "timedOut": null,
+              "duration": 47,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var _ptBR_home, _ptBR_home1, _ptBR_home2, _ptBR_home3;\ncy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(___WEBPACK_IMPORTED_MODULE_2__.AddOrUpdateItem, {\n    handleSave: ()=>{},\n    isToSave: true,\n    inputDescriptionLabel: src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === null || src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === void 0 ? void 0 : (_ptBR_home = src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR.home) === null || _ptBR_home === void 0 ? void 0 : _ptBR_home.addTaskDescription,\n    inputNameLabel: src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === null || src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === void 0 ? void 0 : (_ptBR_home1 = src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR.home) === null || _ptBR_home1 === void 0 ? void 0 : _ptBR_home1.addNameInput,\n    addButtonName: src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === null || src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === void 0 ? void 0 : (_ptBR_home2 = src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR.home) === null || _ptBR_home2 === void 0 ? void 0 : _ptBR_home2.addButton,\n    saveButtonName: src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === null || src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR === void 0 ? void 0 : (_ptBR_home3 = src_dictionaries_default_language_collections_default_pt_BR__WEBPACK_IMPORTED_MODULE_1__.ptBR.home) === null || _ptBR_home3 === void 0 ? void 0 : _ptBR_home3.updateButton\n}, void 0, false, {\n    fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/molecules/Home/ToDoList/AddOrUpdateItem/test/AddOrUpdateItem.cy.tsx\",\n    lineNumber: 26,\n    columnNumber: 7\n}, undefined));\ncy.getByDataCy(\"button-update-task\").contains(\"Salvar\");",
+              "err": {},
+              "uuid": "1a45907d-fae1-4d9f-8ce8-7e5d8e41fa0a",
+              "parentUUID": "c8bb23ad-7c09-4509-ac50-a9b4efbb8076",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "62a6335c-20dd-4f44-8b69-a364d965e2e1",
+            "1a45907d-fae1-4d9f-8ce8-7e5d8e41fa0a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 121,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

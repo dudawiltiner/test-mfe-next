@@ -1,0 +1,10 @@
+{
+  "wrongUser": {
+    "email": "wronguser@uhuu.com",
+    "password": "wrongpassword"
+  },
+  "rightUser": {
+    "email": "user-name@uhuu.com",
+    "password": "password"
+  }
+}

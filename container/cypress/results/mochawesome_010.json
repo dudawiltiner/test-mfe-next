@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-18T20:55:21.672Z",
+    "end": "2023-10-18T20:55:21.796Z",
+    "duration": 124,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2db2938f-3de4-49f8-85fc-4bbc8fd9424d",
+      "title": "",
+      "fullFile": "src/components/molecules/Home/ToDoList/TasksList/test/TasksList.cy.tsx",
+      "file": "src/components/molecules/Home/ToDoList/TasksList/test/TasksList.cy.tsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0419b4d4-ce20-4b9e-852f-3a68d7563d87",
+          "title": "<TasksList />",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "when you dont have any task, it should show a message saying that you dont have any task created",
+              "fullTitle": "<TasksList /> when you dont have any task, it should show a message saying that you dont have any task created",
+              "timedOut": null,
+              "duration": 48,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_ComponentUseCase__WEBPACK_IMPORTED_MODULE_1__.ComponentUseCase, {\n    noTasks: true\n}, void 0, false, {\n    fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/molecules/Home/ToDoList/TasksList/test/TasksList.cy.tsx\",\n    lineNumber: 5,\n    columnNumber: 14\n}, undefined));\ncy.getByDataCy(\"no-tasks-message\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "90c897a9-07d1-4007-984d-7056f7b48745",
+              "parentUUID": "0419b4d4-ce20-4b9e-852f-3a68d7563d87",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "when you have some list of tasks to be rendered, it should show each of the tasks",
+              "fullTitle": "<TasksList /> when you have some list of tasks to be rendered, it should show each of the tasks",
+              "timedOut": null,
+              "duration": 45,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_ComponentUseCase__WEBPACK_IMPORTED_MODULE_1__.ComponentUseCase, {\n    noTasks: false\n}, void 0, false, {\n    fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/molecules/Home/ToDoList/TasksList/test/TasksList.cy.tsx\",\n    lineNumber: 11,\n    columnNumber: 14\n}, undefined));\ncy.getByDataCy(\"list-item-1\").should(\"be.visible\");\ncy.getByDataCy(\"list-item-2\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "fc246f78-4c74-4af6-93da-307b8eb1427c",
+              "parentUUID": "0419b4d4-ce20-4b9e-852f-3a68d7563d87",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "90c897a9-07d1-4007-984d-7056f7b48745",
+            "fc246f78-4c74-4af6-93da-307b8eb1427c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 93,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

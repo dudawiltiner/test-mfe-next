@@ -1,0 +1,7 @@
+dist/
+node_modules/
+src/styles/
+public/script/
+cypress/results
+README.md
+.next/

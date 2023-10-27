@@ -1,0 +1,30 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '🟣🤘🏼 Checking the build and tests of your project before pushing'
+
+# Check Components Testing
+(npm run clear:report && npm run cy:run:component) ||
+(
+  echo '🫣🚧🫣🚧 Component Test break now! 🚧🫣🚧🫣
+      Check what may have happened and, if you prefer, run the componet test in the terminal using the following command to check: npm run cy:run:component.';
+  false;
+)
+
+npm run cy:run:e2e ||
+(
+  npm run mochawesome:merge:open && echo '🫣🚧🫣🚧 E2E Test break now! 🚧🫣🚧🫣
+      Check what may have happened and, if you prefer, run the e2e test in the terminal using the following command to check: npm run cy:run:e2e.';
+  false;
+)
+
+# Check Build
+npm run build ||
+(
+  echo '⚙️❌⚙️❌ Build break! Don't Trust Murphy's Law. ❌⚙️❌⚙️
+      Check what may have happened and, if you prefer, run the build in the terminal using the following command to check: npm run build.';
+  false;
+)
+
+# If everything passes... Now we can commit
+echo '💜🚀💜 Uhuu! Alright, now everything is ready to rock. You can celebrate for now hehe. I will push the changes. 💜🚀💜'

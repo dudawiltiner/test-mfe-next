@@ -1,0 +1,71 @@
+{
+  "name": "frontend-template",
+  "version": "1.0.0",
+  "description": "Template do Frontend para o Projeto Ultra",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "commit": "git-cz",
+    "dev:pipeline": "next dev",
+    "dev": "next dev -H 0.0.0.0 -p 80",
+    "clear:report": "rm -rf cypress/results",
+    "cy:run:component": "cypress run --component",
+    "cy:run:e2e": "cypress run --e2e",
+    "cy:open": "cypress open",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "format": "prettier --write .",
+    "mochawesome:merge": "mkdir -p cypress/results/mochawesome-report && mochawesome-merge 'cypress/results/*.json' > cypress/results/mochawesome-report/mochawesome.json && marge cypress/results/mochawesome-report/mochawesome.json -f report -o cypress/results/mochawesome-report --charts",
+    "mochawesome:merge:open": "mkdir -p cypress/results/mochawesome-report && mochawesome-merge 'cypress/results/*.json' > cypress/results/mochawesome-report/mochawesome.json && marge cypress/results/mochawesome-report/mochawesome.json -f report -o cypress/results/mochawesome-report --charts --autoOpen=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@types/mochawesome": "^6.2.1",
+    "@types/node": "20.5.7",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "commitizen": "^4.3.0",
+    "cypress": "^13.3.0",
+    "eslint": "^8.48.0",
+    "eslint-config-next": "^13.5.5",
+    "eslint-config-prettier": "^9.0.0",
+    "husky": "^8.0.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "prettier": "^3.0.3"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.7",
+    "@mui/material": "^5.14.15",
+    "@vercel/analytics": "^1.0.2",
+    "axios": "^1.5.0",
+    "jwt-decode": "^3.1.2",
+    "next": "^13.5.6",
+    "next-auth": "^4.23.2",
+    "next-intl": "^2.20.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.46.0",
+    "react-query": "^3.39.3",
+    "typescript": "5.2.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog",
+      "disableScopeLowerCase": true
+    }
+  }
+}

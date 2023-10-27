@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-18T20:55:13.345Z",
+    "end": "2023-10-18T20:55:13.526Z",
+    "duration": 181,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bfaca335-2346-407f-b8da-0a3c18cdd2ae",
+      "title": "",
+      "fullFile": "src/components/molecules/Login/Forms/test/Form.cy.tsx",
+      "file": "src/components/molecules/Login/Forms/test/Form.cy.tsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "40cb3079-1535-4e8c-9a0a-d1e6a66687d6",
+          "title": "<Form />",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "when the email and password are not filled in and the \"ENTER\" button is clicked, should show the correct help messages",
+              "fullTitle": "<Form /> when the email and password are not filled in and the \"ENTER\" button is clicked, should show the correct help messages",
+              "timedOut": null,
+              "duration": 137,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_ComponentUseCase__WEBPACK_IMPORTED_MODULE_1__.ComponentUseCase, {\n    submitError: false\n}, void 0, false, {\n    fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/molecules/Login/Forms/test/Form.cy.tsx\",\n    lineNumber: 5,\n    columnNumber: 14\n}, undefined));\ncy.getByDataCy(\"button-login\").click();\ncy.getByDataCy(\"help-text-email-login\").should(\"be.visible\").contains(\"Confira se o email est\\xe1 preenchido\");\ncy.getByDataCy(\"help-text-password-login\").should(\"be.visible\").contains(\"Confira se a senha est\\xe1 preenchida\");",
+              "err": {},
+              "uuid": "3744222c-1fa0-459a-99c4-03f407499a94",
+              "parentUUID": "40cb3079-1535-4e8c-9a0a-d1e6a66687d6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "when the component receives submitError as true, it should show an error message",
+              "fullTitle": "<Form /> when the component receives submitError as true, it should show an error message",
+              "timedOut": null,
+              "duration": 17,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_ComponentUseCase__WEBPACK_IMPORTED_MODULE_1__.ComponentUseCase, {\n    submitError: true\n}, void 0, false, {\n    fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/molecules/Login/Forms/test/Form.cy.tsx\",\n    lineNumber: 19,\n    columnNumber: 14\n}, undefined));\ncy.getByDataCy(\"submit-error-message\").should(\"be.visible\").contains(\"Confira se o email e a senha est\\xe3o corretos\");",
+              "err": {},
+              "uuid": "fd94d2a1-dfa0-4ab3-8eab-a02d4dbab43e",
+              "parentUUID": "40cb3079-1535-4e8c-9a0a-d1e6a66687d6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3744222c-1fa0-459a-99c4-03f407499a94",
+            "fd94d2a1-dfa0-4ab3-8eab-a02d4dbab43e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 154,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-18T20:55:23.708Z",
+    "end": "2023-10-18T20:55:23.829Z",
+    "duration": 121,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "49eccdb5-e156-4e9c-bd74-ebbe779af3da",
+      "title": "",
+      "fullFile": "src/components/atoms/Home/ToDoList/Item/test/Item.cy.tsx",
+      "file": "src/components/atoms/Home/ToDoList/Item/test/Item.cy.tsx",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "192c865e-2dc9-4c4f-93ed-4b1937db59fe",
+          "title": "<Item />",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "when the item receives the properties of name and description, should show the name of the item and the name of the description who created the item.",
+              "fullTitle": "<Item /> when the item receives the properties of name and description, should show the name of the item and the name of the description who created the item.",
+              "timedOut": null,
+              "duration": 62,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(___WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    value: 0,\n    name: \"Nome do Item\",\n    description: \"Descri\\xe7\\xe3o do Item\",\n    createdAt: \"02/02/2023\"\n}, void 0, false, {\n    fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/atoms/Home/ToDoList/Item/test/Item.cy.tsx\",\n    lineNumber: 7,\n    columnNumber: 7\n}, undefined));\ncy.getByDataCy(\"list-item-content-0\").should(\"be.visible\");\ncy.getByDataCy(\"list-item-content-0\").within(()=>{\n    cy.get(\"span\").contains(\"Nome do Item - \\uD83D\\uDDD3️ 02/02/2023\");\n    cy.get(\"p\").contains(\"Descri\\xe7\\xe3o do Item\");\n});",
+              "err": {},
+              "uuid": "ecc78b46-8e17-4efb-b64c-e0f338e050ea",
+              "parentUUID": "192c865e-2dc9-4c4f-93ed-4b1937db59fe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "when the item has some action to be performed, should show that action",
+              "fullTitle": "<Item /> when the item has some action to be performed, should show that action",
+              "timedOut": null,
+              "duration": 15,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(___WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    value: 0,\n    name: \"Nome do Item\",\n    description: \"Descri\\xe7\\xe3o do Item\",\n    createdAt: \"02/02/2023\",\n    actions: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_barrel_optimize_names_Checkbox_Typography_mui_material__WEBPACK_IMPORTED_MODULE_1__.Checkbox, {\n        \"data-cy\": \"checkbox-action\"\n    }, void 0, false, void 0, void 0)\n}, void 0, false, {\n    fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/atoms/Home/ToDoList/Item/test/Item.cy.tsx\",\n    lineNumber: 24,\n    columnNumber: 7\n}, undefined));\ncy.getByDataCy(\"checkbox-action\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "a87f4ece-4db1-47e5-88ea-e6a395a766d6",
+              "parentUUID": "192c865e-2dc9-4c4f-93ed-4b1937db59fe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "when showSecondComponent property is true and secondComponent property has an element, should show that element or component",
+              "fullTitle": "<Item /> when showSecondComponent property is true and secondComponent property has an element, should show that element or component",
+              "timedOut": null,
+              "duration": 13,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.mount(/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(___WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n    value: 0,\n    name: \"Nome do Item\",\n    description: \"Descri\\xe7\\xe3o do Item\",\n    createdAt: \"02/02/2023\",\n    showSecondComponent: true,\n    secondComponent: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_barrel_optimize_names_Checkbox_Typography_mui_material__WEBPACK_IMPORTED_MODULE_1__.Typography, {\n        \"data-cy\": \"second-component\",\n        children: \"Um elemento/componente\"\n    }, void 0, false, void 0, void 0)\n}, void 0, false, {\n    fileName: \"/Users/dudauhuu/Workplace/BlockBuster/docker-development/projects/frontend-template/src/components/atoms/Home/ToDoList/Item/test/Item.cy.tsx\",\n    lineNumber: 38,\n    columnNumber: 7\n}, undefined));\ncy.getByDataCy(\"second-component\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "dcf22414-ed53-4ce3-b661-075fd8c2c2f7",
+              "parentUUID": "192c865e-2dc9-4c4f-93ed-4b1937db59fe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ecc78b46-8e17-4efb-b64c-e0f338e050ea",
+            "a87f4ece-4db1-47e5-88ea-e6a395a766d6",
+            "dcf22414-ed53-4ce3-b661-075fd8c2c2f7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 90,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

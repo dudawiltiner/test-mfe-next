@@ -1,0 +1,95 @@
+stages:
+  - install
+  - lint
+  - test
+  - build
+  - deploy
+
+default:
+  image: node:18.17.1
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - .npm/
+      - node_modules/
+
+.default-rules:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
+Install Dependencies:
+  extends: .default-rules
+  stage: install
+  script:
+    - npm ci --cache .npm --prefer-offline
+
+Format:
+  stage: lint
+  extends: .default-rules
+  script:
+    - npm run check-format
+
+Lint:
+  stage: lint
+  extends: .default-rules
+  script:
+    - npm run check-lint
+
+CypressTests:
+  image: cypress/browsers:node-18.16.1-chrome-114.0.5735.133-1-ff-114.0.2-edge-114.0.1823.51-1
+  stage: test
+  extends: .default-rules
+  script:
+    - npm ci --cache .npm --prefer-offline
+    - npx cypress install
+    - npm run dev:pipeline &
+    - npm run cy:run:component
+    # - npm run cy:run:e2e
+  after_script:
+    - npm run mochawesome:merge
+    - mv cypress/results/mochawesome-report/ ./mochawesome-report
+  artifacts:
+    when: always
+    name: 'artifacts-$CI_COMMIT_REF_SLUG'
+    paths:
+      - mochawesome-report
+    expire_in: 4 day
+
+Build:
+  stage: build
+  extends: .default-rules
+  script:
+    - npm run build
+Build and Push:
+  stage: build
+  image:
+    name: amazon/aws-cli
+    entrypoint: ['']
+  rules:
+    - if: $CI_PROJECT_NAME != "frontend" && $CI_COMMIT_BRANCH == "develop" && $CI_PIPELINE_SOURCE == "push"
+  services:
+    - name: docker:24.0.5-dind
+      alias: docker
+  variables:
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ''
+  before_script:
+    - amazon-linux-extras install docker
+    - docker info
+    - aws ecr get-login-password | docker login --username AWS --password-stdin $ECR_HOST
+    - APP_VERSION=$(cat package.json | grep version | head -1 | awk '{ print $2 }' | sed 's/[",]//g')
+  script:
+    - docker build -t $ECR_HOST/$CI_PROJECT_NAME .
+    - docker push $ECR_HOST/$CI_PROJECT_NAME
+    - docker tag $ECR_HOST/$CI_PROJECT_NAME $ECR_HOST/$CI_PROJECT_NAME:$APP_VERSION
+    - docker push $ECR_HOST/$CI_PROJECT_NAME:$APP_VERSION
+Deploy Vercel Homolog:
+  stage: deploy
+  rules:
+    - if: $CI_PROJECT_NAME != "frontend" && $CI_COMMIT_BRANCH == "develop" && $CI_PIPELINE_SOURCE == "push"
+  script:
+    - npm install --global vercel
+    - vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+    - vercel build --prod --token=$VERCEL_TOKEN
+    - vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
